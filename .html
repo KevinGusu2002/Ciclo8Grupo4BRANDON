@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1c1c1c;
+            /* Fondo oscuro */
+            color: #e0e0e0;
+            /* Texto gris claro */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #333;
+            /* Fondo oscuro */
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid #444;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.1em;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+
+        /* Secciones */
+        section {
+            margin: 40px auto;
+            padding: 30px;
+            max-width: 1100px;
+            background-color: #2b2b2b;
+            /* Fondo oscuro para las secciones */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #ff9800;
+            /* Color de título anaranjado */
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        section h3 {
+            font-size: 1.5em;
+            color: #fff;
+            margin-top: 15px;
+            font-weight: bold;
+            opacity: 0.8;
+        }
+
+        /* Galería de imágenes */
+        .galeria {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .galeria img {
+            width: 32%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.05);
+            /* Efecto al pasar el ratón */
+        }
+
+        /* Formulario de contacto */
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 20px auto;
+            color: #fff;
+        }
+
+        form label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        form input,
+        form textarea {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 2px solid #444;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        form button {
+            padding: 15px;
+            background-color: #ff9800;
+            /* Botón con color anaranjado */
+            border: none;
+            color: #fff;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #e57c00;
+        }
+
+        /* Sección de Redes Sociales */
+        #redes-sociales {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #redes-sociales h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #ff9800;
+            text-transform: uppercase;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            filter: grayscale(100%);
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+            filter: grayscale(0%);
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 1em;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 4px solid #444;
+        }
+
+        footer p {
+            margin: 0;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sección de Encabezado -->
+    <header>
+        <h1>Soy Brandon Alexander Huayhua Callohuanca</h1>
+        <p>¡Bienvenidos a mi página personal! Este espacio está diseñado para ofrecerte una visión más detallada sobre
+            mi perfil profesional, mis áreas de especialización y los proyectos en los que he trabajado. Aquí podrás
+            explorar mis habilidades técnicas y creativas, así como los logros y experiencias que me han permitido
+            crecer en mi carrera. Además, encontrarás información sobre cómo puedes ponerte en contacto conmigo, ya sea
+            para colaborar en futuros proyectos, hacer una consulta o simplemente conectar. ¡Espero que disfrutes la
+            visita y que encuentres lo que estás buscando!
+        </p>
+    </header>
+
+    <!-- Sección de Habilidades -->
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <p>Aquí tienes algunas de mis habilidades más destacadas:</p>
+
+        <h3>Comunicación Eficaz</h3>
+        <p>La habilidad para comunicarme de manera clara y persuasiva es una de mis fortalezas. Ya sea de forma
+            escrita o verbal, me esfuerzo por transmitir ideas de manera concisa y adaptada a la audiencia, lo que
+            facilita el entendimiento y la colaboración en equipo.!
+        </p>
+        <div class="galeria">
+            <img src="COMUNICACION EFICAZ 1.jpeg" alt="Habilidad 1">
+            <img src="COMUNICACION EFICAZ 2.png" alt="Habilidad 2">
+            <img src="COMUNICACION EFICAZ 3.png" alt="Habilidad 3">
+        </div>
+
+        <h3>Trabajo en Equipo</h3>
+        <p>Me considero una persona que sabe cómo colaborar de manera efectiva en entornos grupales. Entiendo la
+            importancia de escuchar, aportar ideas y apoyar a los demás para lograr los objetivos comunes. Mi enfoque es
+            siempre la cooperación y el respeto mutuo.</p>
+        <div class="galeria">
+            <img src="trabajo en equipo 1.jpg" alt="Habilidad 1">
+            <img src="trabajo en equipo 2.jpg" alt="Habilidad 2">
+            <img src="trabajo en equipo 3.jpg" alt="Habilidad 3">
+        </div>
+
+        <h3>Capacidad de Retención</h3>
+        <p>Tengo una excelente capacidad para recordar detalles importantes, lo que me permite aprender rápidamente y
+            aplicar conocimientos de manera efectiva en mi día a día. Esta habilidad me ayuda a mantenerme organizada,
+            reconocer patrones y recordar información relevante, lo que facilita la toma de decisiones y mejora la
+            productividad.</p>
+
+        <div class="galeria">
+            <img src="Capacidad de Retención 1.png" alt="Habilidad 1">
+            <img src="Capacidad de Retención 2.jpeg" alt="Habilidad 2">
+            <img src="Capacidad de Retención 3.jpeg" alt="Habilidad 3">
+        </div>
+
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <p>Estos son algunos de los proyectos que he realizado:</p>
+
+        <h3>Proyecto 1: Terminar la Carrera universitaria</h3>
+        <p>Uno de mis principales objetivos a corto plazo es completar mi carrera profesional. Estoy comprometida/o con
+            mi formación académica y busco aprovechar cada oportunidad para adquirir conocimientos y habilidades que me
+            permitan destacarme en mi campo. Terminar esta etapa me permitirá continuar creciendo tanto profesional como
+            personalmente.</p>
+        <div class="galeria">
+            <img src="carrera 1.jpg" alt="Proyecto 1">
+            <img src="carrera 2.jpg" alt="Proyecto 2">
+
+        </div>
+
+
+        <h3>Proyecto 2: Tener una Empresa Consolidada</h3>
+        <p> Mi visión a largo plazo es crear y consolidar mi propia empresa. Estoy trabajando en desarrollar una idea de
+            negocio sólida que no solo sea rentable, sino que también genere un impacto positivo en la comunidad. Mi
+            objetivo es construir una empresa que ofrezca productos o servicios de calidad, manteniendo un enfoque ético
+            y sostenible, y convirtiéndola en una referencia dentro de su industria.</p>
+        <div class="galeria">
+            <img src="empresa 1.jpg" alt="Proyecto 1">
+            <img src="empresa 2.jpeg" alt="Proyecto 2">
+            <img src="empresa 3.jpeg" alt="Proyecto 3">
+        </div>
+
+
+        <p>Además de las imágenes, aquí puedes ver un video de uno de mis proyectos más destacados:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TUVIDEOID" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <!-- Sección de Redes Sociales -->
+    <section id="redes-sociales">
+        <h2>Redes Sociales</h2>
+        <p>Sígueme en mis redes sociales:</p>
+        <div class="social-icons">
+            <!-- Aquí puedes poner los enlaces a tus redes sociales -->
+            <a href="https://www.facebook.com/tuusuario" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                    alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com/@tuusuario" target="_blank">
+                <img src="https://static.vecteezy.com/system/resources/previews/023/986/492/non_2x/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.png"
+                    alt="TikTok">
+            </a>
+            <a href="https://www.instagram.com/tuusuario" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/tuusuario" target="_blank">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.vecteezy.com%2Fpng%2F18930480-logotipo-de-linkedin-png-icono-de-linkedin-png-transparente&psig=AOvVaw1k3kCxIKZVDScUwDr-WiXV&ust=1731475384767000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNDj5baG1okDFQAAAAAdAAAAABAn"
+                    alt="LinkedIn">
+            </a>
+            <a href="https://twitter.com/tuusuario" target="_blank">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.vexels.com%2Fpng-svg%2Fvista-previa%2F137419%2Flogotipo-de-icono-de-twitter&psig=AOvVaw085oJevPUDW_uDibLrapfW&ust=1731475523448000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJCF-viG1okDFQAAAAAdAAAAABAE"
+                    alt="Twitter">
+            </a>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Brandon Alexander Huayhua Callohuanca. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
